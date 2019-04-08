@@ -1,0 +1,15 @@
+--criação do banco----
+create database pweb2;
+
+--utilização do banco----
+use pweb2;
+
+
+--criação da tabela----
+create table if not exists contatos(
+	id int auto_increment,
+	nome varchar(255),
+	email varchar(60),
+	endereco varchar(60),
+	dataNascimento DATE,
+	primary key(id));
